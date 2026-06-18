@@ -1,6 +1,6 @@
 import random
 
-user_choice = input("Roll the dice? (y/n): ")
+user_choice = input("Roll the dice? (y/n): ").lower()
 
 if user_choice == "y":
     dice_rolls_tuple = ()
@@ -8,6 +8,10 @@ if user_choice == "y":
         roll_result = random.randint(1, 6)
         dice_rolls_tuple += (roll_result,)
     print(dice_rolls_tuple)
+elif user_choice == "n":
+    print("Thanks for playing!")
+else:
+    print("Invalid choice!")
 
 
 # Loop
