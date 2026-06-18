@@ -3,9 +3,12 @@ import random
 user_choice = input("Roll the dice? (y/n): ")
 
 if user_choice == "y":
+    dice_rolls_tuple = ()
     for roll in range(2):
         roll_result = random.randint(1, 6)
-        print(roll_result) 
+        dice_rolls_tuple += (roll_result,)
+    print(dice_rolls_tuple)
+
 
 # Loop
     # Ask user "Roll dice? (y/n)" 
