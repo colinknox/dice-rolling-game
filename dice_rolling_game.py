@@ -1,3 +1,12 @@
+import random
+
+user_choice = input("Roll the dice? (y/n): ")
+
+if user_choice == "y":
+    for roll in range(2):
+        roll_result = random.randint(1, 6)
+        print(roll_result) 
+
 # Loop
     # Ask user "Roll dice? (y/n)" 
     # If user answer == "y":
